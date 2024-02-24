@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Project Name: Personal Portfolio Website
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website | devRasen</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container ">
+      <!-- Header section -->
+      <section id="header"> 
+        <div class="header-top">
+          <div class="logo">
+            <a href="#">Portfo<span>lio</span></a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Sobre Mim</a></li>
+              <li><a href="#portfolio">Projetos</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Olá, sou Iago <span>Custodio</span></h1>
+            <h3 class="profession">Web Developer</h3>
+            <p class="short-desc">
+              Sejá bem vindo ao meu Portfolio😉.
+            </p>
+            <a href="assets/IAGO_CUSTODIO_currículo.pdf" target="_blank" class="btn-cv" download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="assets/MinhaFotoIA.png" alt="user-sideimg" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">Sobre mim</h2>
+            <h3 class="title">Web Developer</h3>
+          </div>
+          <p class="desc">
+            Sou um estudante entusiasmado e dedicado em busca de oportunidades para aplicar e aprimorar minhas
+            habilidades como desenvolvedor front-end. Atualmente cursando o ensino superior Análise e Desenvolvimento de
+            Sistemas no Senac, sou curioso pelo mundo da tecnologia. Sempre em busca de aprendizados, estou ansioso para
+            contribuir e crescer no âmbito profissional.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">Habilidades</p>
+            <p class="tab-links" onclick="openTab('education')">Educação</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Linguagens Programação</span><br/>HTML5/CSS3/ReactJS/JavaScript/Angular
+              </li>
+              <li>
+                <span>Linguagens Programação</span><br/>Python/ C#/ C++/PHP
+              </li>
+              <li><span>Framework</span><br />Bootstrap/ Design Responsivo</li>
+              <li>
+                <span>Banco de Dados</span><br/>MYSQL/SQL
+              </li>
+              <li>
+                <span>Designer</span><br/>Fluxogramas/ Wireframes / Protótipo Navegável/Figma
+              </li>
+              <li>
+                <span>Designer</span><br/>Photoshop/ Ilustrador/ Gimp/ Canva
+              </li>
+              <li>
+                <span>Noções de usabilidade e navegabilidade</span><br/>Heurísticasde Nielsen
+              </li>
+              <li>
+                <span>Designer</span><br/>Photoshop/ Ilustrador/ Gimp/ Canva
+              </li>  
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>2023 - 2023</span><br />
+                Intern Developer at Web for Solutions Ltd.
+              </li>
+              <li>
+                <span>2021 - 2023</span><br />Managing Director at Digital BD
+                News
+              </li>
+              <li>
+                <span>2016 - Current</span><br />Content Creator at YouTube
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>Junho 2023 até Julho 2025</span>
+                <span>- Senac – Graduação </span><br/>Análise e Desenvolvimento de Sistemas
+              </li>
+              <li>
+                <span>Janeiro 2021 até Dezembro 2022</span>
+                <span>- Etec Guarulhos - Técnico</span><br/>Desenvolvimento de Sistema 
+              </li>
+              <li>
+                <span>Junho 2023 até Junho 2023</span>
+                <span>- Udemy  </span><br/>Algoritmo e Logic
+              </li>
+              <li>
+                <span>Junho 2023 até Julho 2025</span>
+                <span>- Cisco - Curso </span><br/>Python_Essentials_1
+              </li>
+              <li>
+                <span>Fevereiro 2023 até Fevereiro 2023</span>
+                <span>- Deploy Workshop - Curso </span><br/>Destravando sua carreira em UI Design
+              </li>
+              <li>
+                <span>Fevereiro 2023 até Fevereiro 2023</span>
+                <span>- Cisco - Curso </span><br/>Introduction_to_Cybersecurity
+              </li>
+              <li>
+                <span>Maio 2022 até Maio 2022</span>
+                <span>-  IBSEC - Curso </span><br/>Cybersecurity Awareness 
+              </li>
+              <li>
+                <span>Junho 2020 até Agosto 2021</span>
+                <span>- Udemy - Curso</span><br/>Desenvolvimento Web Completo  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      
+  
+    
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="section-title">
+          <h2 class="sub-title">Meus Projetos</h2>
+          <h3 class="title"></h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="assets/tt2.png" alt="project1" />
+              <div class="layer">
+                <h3>Clone Spotify</h3>
+                <p>
+                  Este projeto é um clone do aplicativo Spotify criado usando java script 
+                  como front-end e interface onde mostro um pouco das minhas habilidades em 
+                  javascript para construir algo avançado como a interface do Spotify.
+                </p>
+                <a href="https://github.com/IagoCustodio/CloneSpotify?tab=readme-ov-file"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/CloneNetflix.png" alt="project2" />
+              <div class="layer">
+                <h3 class="title_layer">Clone Netflix React</h3>
+                <p>
+                  Este projeto é um clone do site da Netflix criado usando React.JS onde mostro um pouco das minhas habilidades em React.JS para construir 
+                  algo avançado como a interface da Netflix. 
+                </p>
+                <a href="https://github.com/IagoCustodio/react-netflix" class="teste"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/museu3.png" alt="project3" />
+              <div class="layer">
+                <h3>Museu Nacional</h3>
+                <p>
+                  Este projeto é um site do Museu-Nacional criado usando HTML e CSS como 
+                  front-end onde mostro um pouco das minhas habilidades usando HTML e CSS.
+                </p>
+                <a href="https://github.com/IagoCustodio/Museu-Nacional/blob/main/README.md"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-title">
+          <h2 class="sub-title"></h2>
+          <h3 class="title"></h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="assets/Halloween.png" alt="project1" />
+              <div class="layer">
+                <h3>Formulario Halloween</h3>
+                <p>
+                  Este projeto é um formulario criado usando HTML e CSS como front-end 
+                  onde mostro um pouco das minhas habilidades usando HTML e CSS.
+                </p>
+                <a href="https://github.com/IagoCustodio/Formulario-Halloween/blob/main/README.md"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/TecBlog.png" alt="project2" />
+              <div class="layer">
+                <h3 class="title_layer">TecBlog</h3>
+                <p>
+                  Este projeto é site fictício criado usando HTML e CSS como front-end 
+                  onde mostro um pouco das minhas habilidades usando HTML e CSS.
+                </p>
+                <a href="https://github.com/IagoCustodio/react-netflix" class="teste"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/cadastro5.png" alt="project3" />
+              <div class="layer">
+                <h3>Formulario Cadastro</h3>
+                <p>
+                  Este projeto é um formulario criado usando HTML,CSS e PHP onde mostro um pouco das minhas habilidades usando HTML,CSS e PHP.
+                </p>
+                <a href="https://github.com/IagoCustodio/FormularioPHP"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contato</h2>
+          <h3 class="title">Entrar em Contato</h3>
+        </div>
+        <div class="content">
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-brands fa-github"></i>
+              <div class="info">
+                <h2 class="title">Iago Custodio</h2>
+                <a href="https://github.com/IagoCustodio">https://github.com/IagoCustodio</a>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div class="info">
+                <h2 class="title">Whatsapp</h2>
+                <p class="p">+11 96632-0178</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p class="p">iagoo.custodio@gmail.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-brands fa-linkedin"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <a href="https://www.linkedin.com/in/iagoocustodio/">https://www.linkedin.com/in/iagoocustodio/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="rodape">
+            Copyright ©️ Portfolio | Iago Custodio
+            <br><a href="#">Web Developer</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
